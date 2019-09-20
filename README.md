@@ -29,7 +29,10 @@
  
 # 使用接入
 
-  ``` 	 <1> RxHttpConnect.init("","",false) ``` 
+  ``` 	 
+  <1> 在Application的oncreate中
+  RxHttpConnect.init("","",false)
+  ``` 
  
  第三个参数true打印log false不打印 建议非测试的时候设置为false
   
