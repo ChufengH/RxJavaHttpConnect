@@ -20,7 +20,7 @@
    ```  
     Step 2. Add the dependency
 	  dependencies {
-	          implementation 'com.github.asd392044178:RxJavaHttpConnect:1.0'
+	          implementation 'com.github.asd392044178:RxJavaHttpConnect:2'
               } 
    ``` 
 
