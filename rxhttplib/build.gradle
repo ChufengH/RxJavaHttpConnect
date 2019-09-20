@@ -1,0 +1,59 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 28
+
+
+
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    // Okhttp库
+    implementation 'com.squareup.okhttp3:okhttp:3.11.0'
+    // Retrofit库
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    // Retrofit+gson
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    //gson
+    implementation 'com.google.code.gson:gson:2.8.5'
+    //rxjava
+    implementation "io.reactivex.rxjava2:rxjava:2.2.6"
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.2.0'
+    //rxjava retrofit的支持
+//    implementation 'com.squareup.retrofit2:adapter-rxjava:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.3.0'
+    //load
+    implementation 'com.wang.avi:library:2.1.3'
+    //rxandroid
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    //工具集合
+    implementation 'com.blankj:utilcode:1.23.7'
+    //fastjson
+    implementation 'com.alibaba:fastjson:1.1.55.android'
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'com.github.bumptech.glide:okhttp3-integration:1.4.0@aar'
+    implementation 'jp.wasabeef:glide-transformations:2.0.0'
+}
