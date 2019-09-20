@@ -8,7 +8,6 @@ import android.os.AsyncTask;
 
 import com.blankj.utilcode.util.AppUtils;
 import com.blankj.utilcode.util.FileUtils;
-import com.uroad.rxhttplib.net.config.Config;
 import com.uroad.rxhttplib.net.impl.IRequest;
 import com.uroad.rxhttplib.net.impl.ISuccess;
 import com.uroad.rxhttplib.net.until.FileUtil;

@@ -2,7 +2,8 @@ package com.uroad.rxhttplib.net;
 
 
 
-import com.uroad.rxhttplib.net.config.Config;
+
+import com.uroad.rxhttplib.net.config.RxHttpConnect;
 import com.uroad.rxhttplib.net.impl.RestService;
 import com.uroad.rxhttplib.net.rx.RxRestService;
 
@@ -34,7 +35,7 @@ public  class RestCreator {
         return RestServiceHolder.REST_SERVICE;
     }
     private static final class RetrofitHolder {
-        private static final Retrofit RETROFIT_CLIENT = new Retrofit.Builder().baseUrl(Config.base_url)
+        private static final Retrofit RETROFIT_CLIENT = new Retrofit.Builder().baseUrl(RxHttpConnect.base_url)
                 .client(OkHttpHolder.OK_HTTP_CLIENT)
                 .addConverterFactory(ScalarsConverterFactory.create())
                 .addConverterFactory(GsonConverterFactory.create())
