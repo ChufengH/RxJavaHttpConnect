@@ -3,7 +3,7 @@
  
  
 ![](https://github.com/guodongxiaren/ImageCache/raw/master/Logo/foryou.gif)  
-版本 [![](https://jitpack.io/v/asd392044178/RxJavaHttpConnect.svg)](https://jitpack.io/#asd392044178/RxJavaHttpConnect)
+版本 [![](https://jitpack.io/v/ChufengH/RxJavaHttpConnect.svg)](https://jitpack.io/#ChufengH/RxJavaHttpConnect)
 # 集成
 ```  
 * Add it in your root build.gradle at the end of repositories:
@@ -20,7 +20,7 @@
    ```  
     Step 2. Add the dependency
 	  dependencies {
-	          implementation 'com.github.asd392044178:RxJavaHttpConnect:2'
+	          implementation 'com.github.ChufengH:RxJavaHttpConnect:2'
               } 
    ``` 
 
