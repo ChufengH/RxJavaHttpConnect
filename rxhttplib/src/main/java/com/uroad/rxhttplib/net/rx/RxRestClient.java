@@ -121,7 +121,9 @@ public class RxRestClient {
     public final Observable<String>  delete(){
       return   request(HttpMethod.DELETE);
     }
-
+    public final Observable<String>  upload(){
+        return   request(HttpMethod.UOLOAD);
+    }
     public final Observable<ResponseBody>  download(){
       final  Observable<ResponseBody> responseBodyObservable = RestCreator.getRxRestSevice().download(URL,PAPARMS);
       return  responseBodyObservable;
