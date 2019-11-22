@@ -73,6 +73,7 @@ public abstract class AbstractObserver<T> implements Observer<String> {
     public void onError(Throwable e) {
         onFailure(e.getMessage());
         LatteLoader.stopLoading();
+        e.printStackTrace();
     }
 
     @Override
