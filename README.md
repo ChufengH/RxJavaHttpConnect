@@ -20,7 +20,7 @@
    ```  
     Step 2. Add the dependency
 	  dependencies {
-	          implementation 'com.github.ChufengH:RxJavaHttpConnect:2'
+	          implementation 'com.github.ChufengH:RxJavaHttpConnect:v2.2'
               } 
    ``` 
 
